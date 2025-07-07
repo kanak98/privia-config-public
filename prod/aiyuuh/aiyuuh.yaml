@@ -80,11 +80,11 @@ interface:
 #    size: "normal"      # Options: "normal", "compact", "flexible", or "invisible"
 
 # Example Registration Object Structure (optional)
-registration:
-  socialLogins:
-    ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
-  # allowedDomains:
-  # - "gmail.com"
+#registration:
+# socialLogins:
+#   ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
+# allowedDomains:
+# - "gmail.com"
 
 # Example Balance settings
 # balance:
