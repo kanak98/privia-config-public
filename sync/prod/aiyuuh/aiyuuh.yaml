@@ -2,7 +2,7 @@
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
 # Configuration version (required)
-version: 1.2.8
+version: 1.2.1
 
 # Cache settings: Set to true to enable caching
 cache: true
@@ -128,11 +128,6 @@ actions:
     - "swapi.dev"
     - "librechat.ai"
     - "google.com"
-# ✅ Désactive la recherche Mongo⇄Meili (supprime les erreurs)
-search:
-  enabled: false # ← mets true si tu configures MeiliSearch
-
-# ✅ Désactive RAG (ou pointe vers ton service)
 rag:
   enabled: false # ← ou ragApiUrl: "http://rag-api:8000"
 # Example MCP Servers Object Structure
