@@ -128,8 +128,8 @@ actions:
     - "swapi.dev"
     - "librechat.ai"
     - "google.com"
-rag:
-  enabled: false # ← ou ragApiUrl: "http://rag-api:8000"
+# rag:
+#-enabled: false # ← ou ragApiUrl: "http://rag-api:8000"
 # Example MCP Servers Object Structure
 # mcpServers:
 #   everything:
