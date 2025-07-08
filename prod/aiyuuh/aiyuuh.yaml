@@ -6,6 +6,10 @@ version: 1.2.8
 
 # Cache settings: Set to true to enable caching
 cache: true
+server:
+  redis:
+    url: redis://redis:6379
+    rateLimitUrl: redis://redis:6379
 
 # File strategy s3/firebase
 # fileStrategy: "s3"
