@@ -2,7 +2,7 @@
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
 # Configuration version (required)
-version: 1.2.1
+version: 1.2.8
 
 # Cache settings: Set to true to enable caching
 cache: true
@@ -14,52 +14,52 @@ cache: true
 interface:
   customWelcome: "Privia, l’IA privée et sécurisée. Bienvenue, {{user.name}} !"
   # Privacy policy settings
-# privacyPolicy:
-#   externalUrl: 'https://librechat.ai/privacy-policy'
-#   openNewTab: true
+  # privacyPolicy:
+  #   externalUrl: 'https://librechat.ai/privacy-policy'
+  #   openNewTab: true
 
   # Terms of service
-# termsOfService:
-#   externalUrl: 'https://librechat.ai/tos'
-#   openNewTab: true
-#   modalAcceptance: true
-#   modalTitle: "Terms of Service for LibreChat"
-#   modalContent: |
-      # Terms and Conditions for LibreChat
+  # termsOfService:
+  #   externalUrl: 'https://librechat.ai/tos'
+  #   openNewTab: true
+  #   modalAcceptance: true
+  #   modalTitle: "Terms of Service for LibreChat"
+  #   modalContent: |
+  # Terms and Conditions for LibreChat
 
-#     *Effective Date: February 18, 2024*
+  #     *Effective Date: February 18, 2024*
 
-#     Welcome to LibreChat, the informational website for the open-source AI chat platform, available at https://librechat.ai. These Terms of Service ("Terms") govern your use of our website and the services we offer. By accessing or using the Website, you agree to be bound by these Terms and our Privacy Policy, accessible at https://librechat.ai//privacy.
+  #     Welcome to LibreChat, the informational website for the open-source AI chat platform, available at https://librechat.ai. These Terms of Service ("Terms") govern your use of our website and the services we offer. By accessing or using the Website, you agree to be bound by these Terms and our Privacy Policy, accessible at https://librechat.ai//privacy.
 
-#     ## 1. Ownership
+  #     ## 1. Ownership
 
-#     Upon purchasing a package from LibreChat, you are granted the right to download and use the code for accessing an admin panel for LibreChat. While you own the downloaded code, you are expressly prohibited from reselling, redistributing, or otherwise transferring the code to third parties without explicit permission from LibreChat.
+  #     Upon purchasing a package from LibreChat, you are granted the right to download and use the code for accessing an admin panel for LibreChat. While you own the downloaded code, you are expressly prohibited from reselling, redistributing, or otherwise transferring the code to third parties without explicit permission from LibreChat.
 
-      ## 2. User Data
+  ## 2. User Data
 
-#     We collect personal data, such as your name, email address, and payment information, as described in our Privacy Policy. This information is collected to provide and improve our services, process transactions, and communicate with you.
+  #     We collect personal data, such as your name, email address, and payment information, as described in our Privacy Policy. This information is collected to provide and improve our services, process transactions, and communicate with you.
 
-      ## 3. Non-Personal Data Collection
+  ## 3. Non-Personal Data Collection
 
-#     The Website uses cookies to enhance user experience, analyze site usage, and facilitate certain functionalities. By using the Website, you consent to the use of cookies in accordance with our Privacy Policy.
+  #     The Website uses cookies to enhance user experience, analyze site usage, and facilitate certain functionalities. By using the Website, you consent to the use of cookies in accordance with our Privacy Policy.
 
-      ## 4. Use of the Website
+  ## 4. Use of the Website
 
-#     You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Website. Prohibited behavior includes harassing or causing distress or inconvenience to any person, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within the Website.
+  #     You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Website. Prohibited behavior includes harassing or causing distress or inconvenience to any person, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within the Website.
 
-      ## 5. Governing Law
+  ## 5. Governing Law
 
-#     These Terms shall be governed by and construed in accordance with the laws of the United States, without giving effect to any principles of conflicts of law.
+  #     These Terms shall be governed by and construed in accordance with the laws of the United States, without giving effect to any principles of conflicts of law.
 
-      ## 6. Changes to the Terms
+  ## 6. Changes to the Terms
 
-#     We reserve the right to modify these Terms at any time. We will notify users of any changes by email. Your continued use of the Website after such changes have been notified will constitute your consent to such changes.
+  #     We reserve the right to modify these Terms at any time. We will notify users of any changes by email. Your continued use of the Website after such changes have been notified will constitute your consent to such changes.
 
-      ## 7. Contact Information
+  ## 7. Contact Information
 
-#     If you have any questions about these Terms, please contact us at contact@librechat.ai.
+  #     If you have any questions about these Terms, please contact us at contact@librechat.ai.
 
-#     By using the Website, you acknowledge that you have read these Terms of Service and agree to be bound by them.
+  #     By using the Website, you acknowledge that you have read these Terms of Service and agree to be bound by them.
 
   endpointsMenu: true
   modelSelect: true
@@ -81,10 +81,10 @@ interface:
 
 # Example Registration Object Structure (optional)
 registration:
-  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook', 'apple', 'saml']
+  socialLogins:
+    ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
   # allowedDomains:
   # - "gmail.com"
-
 
 # Example Balance settings
 # balance:
@@ -183,34 +183,34 @@ endpoints:
   #   capabilities: ["execute_code", "file_search", "actions", "tools"]
   custom:
     # Groq Example
-    - name: 'groq'
-      apiKey: '${GROQ_API_KEY}'
-      baseURL: 'https://api.groq.com/openai/v1/'
+    - name: "groq"
+      apiKey: "${GROQ_API_KEY}"
+      baseURL: "https://api.groq.com/openai/v1/"
       models:
         default:
           [
-            'llama3-70b-8192',
-            'llama3-8b-8192',
-            'llama2-70b-4096',
-            'mixtral-8x7b-32768',
-            'gemma-7b-it',
+            "llama3-70b-8192",
+            "llama3-8b-8192",
+            "llama2-70b-4096",
+            "mixtral-8x7b-32768",
+            "gemma-7b-it",
           ]
         fetch: false
       titleConvo: true
-      titleModel: 'mixtral-8x7b-32768'
-      modelDisplayLabel: 'groq'
+      titleModel: "mixtral-8x7b-32768"
+      modelDisplayLabel: "groq"
 
     # Mistral AI Example
-    - name: 'Mistral' # Unique name for the endpoint
+    - name: "Mistral" # Unique name for the endpoint
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
-      apiKey: '${MISTRAL_API_KEY}'
-      baseURL: 'https://api.mistral.ai/v1'
+      apiKey: "${MISTRAL_API_KEY}"
+      baseURL: "https://api.mistral.ai/v1"
 
       # Models configuration
       models:
         # List of default models to use. At least one value is required.
-        default: ['mistral-tiny', 'mistral-small', 'mistral-medium']
+        default: ["mistral-tiny", "mistral-small", "mistral-medium"]
         # Fetch option: Set to true to fetch models from API.
         fetch: true # Defaults to false.
 
@@ -223,7 +223,7 @@ endpoints:
       # titleMethod: "completion"  # Defaults to "completion" if omitted.
 
       # Title Model: Specify the model to use for titles.
-      titleModel: 'mistral-tiny' # Defaults to "gpt-3.5-turbo" if omitted.
+      titleModel: "mistral-tiny" # Defaults to "gpt-3.5-turbo" if omitted.
 
       # Summarize setting: Set to true to enable summarization.
       # summarize: false
@@ -235,7 +235,7 @@ endpoints:
       # forcePrompt: false
 
       # The label displayed for the AI model in messages.
-      modelDisplayLabel: 'Mistral' # Default is "AI" when not set.
+      modelDisplayLabel: "Mistral" # Default is "AI" when not set.
 
       # Add additional parameters to the request. Default params will be overwritten.
       # addParams:
@@ -243,7 +243,7 @@ endpoints:
 
       # Drop Default params parameters from the request. See default params in guide linked below.
       # NOTE: For Mistral, it is necessary to drop the following parameters or you will encounter a 422 Error:
-      dropParams: ['stop', 'user', 'frequency_penalty', 'presence_penalty']
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     - name: "DeepSeek"
       apiKey: "${DEEPSEEK_API_KEY}"
@@ -257,8 +257,8 @@ endpoints:
       modelDisplayLabel: "DeepSeek"
 
     # --- Qwen / DashScope ------------------------------------------------
-    - name: "Qwen"                 # étiquette dans le sélecteur LibreChat
-      apiKey: "${QWEN_API_KEY}"      # ou "user_provided"
+    - name: "Qwen" # étiquette dans le sélecteur LibreChat
+      apiKey: "${QWEN_API_KEY}" # ou "user_provided"
       # Choisis l’URL selon ta région :
       #   International : dashscope‑intl.aliyuncs.com
       #   Chine         : dashscope.aliyuncs.com
@@ -266,65 +266,65 @@ endpoints:
 
       models:
         default:
-          - qwen-plus              # 32 K tokens – polyvalent
-          - qwen-turbo             # + rapide / moins cher
-          - qwen-max               # 128 K tokens – le plus costaud
-        fetch: false               # DashScope ne fournit pas encore /models
+          - qwen-plus # 32 K tokens – polyvalent
+          - qwen-turbo # + rapide / moins cher
+          - qwen-max # 128 K tokens – le plus costaud
+        fetch: false # DashScope ne fournit pas encore /models
 
       titleConvo: true
       titleModel: qwen-plus
-  # (optionnel) certains projets retirent stop/user… ici pas indispensable
-  # dropParams: [stop]
+      # (optionnel) certains projets retirent stop/user… ici pas indispensable
+      # dropParams: [stop]
 
       modelDisplayLabel: "Qwen"
       iconURL: "https://avatars.githubusercontent.com/u/127009744?s=200&v=4"
 
     # OpenRouter Example
-    - name: 'OpenRouter'
+    - name: "OpenRouter"
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
-      apiKey: '${OPENROUTER_KEY}'
-      baseURL: 'https://openrouter.ai/api/v1'
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
       models:
-        default: ['meta-llama/llama-3-70b-instruct']
+        default: ["meta-llama/llama-3-70b-instruct"]
         fetch: true
       titleConvo: true
-      titleModel: 'meta-llama/llama-3-70b-instruct'
+      titleModel: "meta-llama/llama-3-70b-instruct"
       # Recommended: Drop the stop parameter from the request as Openrouter models use a variety of stop tokens.
-      dropParams: ['stop']
-      modelDisplayLabel: 'OpenRouter'
+      dropParams: ["stop"]
+      modelDisplayLabel: "OpenRouter"
 
     # Portkey AI Example
     - name: "Portkey"
-      apiKey: 'user_provided'
-      baseURL: 'https://api.portkey.ai/v1'
+      apiKey: "user_provided"
+      baseURL: "https://api.portkey.ai/v1"
       models:
-          default: ['gpt-4o-mini', 'gpt-4o', 'chatgpt-4o-latest']
-          fetch: true
+        default: ["gpt-4o-mini", "gpt-4o", "chatgpt-4o-latest"]
+        fetch: true
       titleConvo: true
-      titleModel: 'current_model'
+      titleModel: "current_model"
       summarize: false
-      summaryModel: 'current_model'
+      summaryModel: "current_model"
       forcePrompt: false
-      modelDisplayLabel: 'Portkey'
+      modelDisplayLabel: "Portkey"
       iconURL: https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/rjqy7ghvjoiu4cd1xjbf
 
- # --- HuggingFace -------------------------------------------------
-    - name: "HuggingFace"           # apparaît dans le sélecteur de modèles
-      apiKey: "user_provided"       # ou "${HF_API_KEY}"
+    # --- HuggingFace -------------------------------------------------
+    - name: "HuggingFace" # apparaît dans le sélecteur de modèles
+      apiKey: "user_provided" # ou "${HF_API_KEY}"
       baseURL: "https://api-inference.huggingface.co/v1"
       models:
-        default:                    # liste de modèles autorisés
+        default: # liste de modèles autorisés
           - meta-llama/Meta-Llama-3-70B-Instruct
           - HuggingFaceH4/zephyr-7b-beta
-        fetch: false                # HuggingFace ne supporte pas encore /models
-      dropParams: ["top_p"]         # indispensable pour HF :contentReference[oaicite:0]{index=0}
+        fetch: false # HuggingFace ne supporte pas encore /models
+      dropParams: ["top_p"] # indispensable pour HF :contentReference[oaicite:0]{index=0}
       titleConvo: true
       titleModel: "meta-llama/Meta-Llama-3-70B-Instruct"
       modelDisplayLabel: "HuggingFace"
 
     - name: "GitHubModels"
-      apiKey: "${GITHUB_API_KEY}"                 # ou "${GITHUB_PAT}"
+      apiKey: "${GITHUB_API_KEY}" # ou "${GITHUB_PAT}"
       baseURL: "https://api.github.com"
       models:
         default:
@@ -336,8 +336,9 @@ endpoints:
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
 
     - name: "Databricks"
-      apiKey: "${DATABRICKS_API_KEY}"
-       # Remplace <workspace‑host> si tu n’utilises pas l’offre serverless
+      apiKey:
+        "${DATABRICKS_API_KEY}"
+        # Remplace <workspace‑host> si tu n’utilises pas l’offre serverless
       baseURL: "https://<workspace-host>/serving-endpoints"
       models:
         default:
@@ -385,7 +386,7 @@ endpoints:
       modelDisplayLabel: "Cohere"
 
     - name: "Hyperbolic"
-      apiKey: '${HYPERBOLIC_API_KEY}'            # ou "${HYPERBOLIC_API_KEY}"
+      apiKey: "${HYPERBOLIC_API_KEY}" # ou "${HYPERBOLIC_API_KEY}"
       baseURL: "https://api.hyperbolic.xyz/v1"
       models:
         default:
@@ -396,7 +397,7 @@ endpoints:
       iconURL: "https://app.hyperbolic.xyz/icon.svg"
 
     - name: "KlusterAI"
-      apiKey: "${KLUSTER_API_KEY}"                             # ou "${KLUSTER_API_KEY}"
+      apiKey: "${KLUSTER_API_KEY}" # ou "${KLUSTER_API_KEY}"
       baseURL: "https://api.kluster.ai/v1"
       models:
         default:
@@ -472,7 +473,6 @@ endpoints:
         fetch: false
       modelDisplayLabel: "Grok"
       iconURL: "http://www.w3.org/2000/svg"
-
 # fileConfig:
 #   endpoints:
 #     assistants:
