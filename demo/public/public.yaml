@@ -288,7 +288,7 @@ prompts:
       - destinataire:Client|Collègue|Supérieur|Inconnu
       - ton:Formel|Neutre|Amical
       - infos_clés
-    prompt:
+    prompt: |
       Tu es un assistant expert en rédaction d’e-mails professionnels pour {{current_user}}.
 
       Ta mission est de rédiger des e-mails :
