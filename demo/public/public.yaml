@@ -110,40 +110,6 @@ modelSpecs:
         endpoint: "Assistant IA"
         model: "google/gemini-2.0-flash-exp"
         greeting: "Posez-moi une question, j'y réponds vite !"
-        modelSpecs:
-
-    - name: "assistant-email"
-      label: "Assistant E-mail"
-      description: "Assistant spécialisé dans la création d'e-mails pros personnalisés"
-      iconURL: "✉️"
-      preset:
-        endpoint: "Assistant IA"
-        model: "mistralai/mistral-small-3.1-24b-instruct"
-        temperature: 0.5
-        modelLabel: "Assistant E-mail"
-        forcePrompt: true
-        greeting: "Bonjour {{current_user}}, je vais vous aider à rédiger un e-mail professionnel."
-        systemMessage: |
-          Tu es un assistant expert en rédaction d’e-mails professionnels pour {{current_user}}.
-
-          Ta mission est de rédiger des e-mails :
-          - Clairs et concis
-          - Structurés : introduction, corps, conclusion, formule de politesse
-          - Sans fautes d’orthographe ni de grammaire
-          - Adaptés au ton souhaité
-
-          Avant de commencer, vérifie que tu as bien ces informations :
-          1. Sujet de l’e-mail : {{sujet}}
-          2. Destinataire : {{destinataire:Client|Collègue|Supérieur|Inconnu}}
-          3. Ton souhaité : {{ton:Formel|Neutre|Amical}}
-          4. Informations importantes à inclure : {{infos_clés}}
-
-          Si l'une de ces informations est manquante, demande-la.
-
-          Une fois toutes les données réunies, rédige un e-mail complet prêt à être envoyé, daté de {{current_date}}, et signé par {{current_user}}.
-
-          Ne commence jamais la rédaction tant que tu n’as pas obtenu ces infos.
-          Ensuite, propose une version rédigée directement prête à être envoyée.
 
 registration:
   socialLogins:
@@ -314,3 +280,27 @@ endpoints:
 #     # instructions: "You are a memory management assistant. Store and manage user information accurately."
 #     # model_parameters:
 #     #   temperature: 0.1
+prompts:
+  - name: "Créer un e-mail professionnel"
+    description: "Génère un e-mail clair, structuré et adapté au ton souhaité"
+    inputVars:
+      - sujet
+      - destinataire:Client|Collègue|Supérieur|Inconnu
+      - ton:Formel|Neutre|Amical
+      - infos_clés
+    prompt: |
+      Tu es un assistant expert en rédaction d’e-mails professionnels pour {{current_user}}.
+
+      Ta mission est de rédiger des e-mails :
+      - Clairs et concis
+      - Structurés : introduction, corps, conclusion, formule de politesse
+      - Sans fautes d’orthographe ni de grammaire
+      - Adaptés au ton souhaité
+
+      Voici les informations :
+      1. Sujet : {{sujet}}
+      2. Destinataire : {{destinataire}}
+      3. Ton : {{ton}}
+      4. Informations clés : {{infos_clés}}
+
+      Rédige un e-mail complet prêt à être envoyé, daté de {{current_date}}, et signé par {{current_user}}.
