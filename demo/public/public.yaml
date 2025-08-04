@@ -234,7 +234,7 @@ endpoints:
       titleModel: "mistralai/mistral-small-3.1-24b-instruct"
       dropParams: ["stop"]
       modelDisplayLabel: "Assistant IA"
-      iconURL:
+      iconURL: "⚡"
 prompts:
   - name: "Créer un e-mail professionnel"
     description: "Génère un e-mail clair, structuré et adapté au ton souhaité"
