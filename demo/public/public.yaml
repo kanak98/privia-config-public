@@ -233,7 +233,7 @@ endpoints:
       titleModel: "mistralai/mistral-small-3.1-24b-instruct"
       dropParams: ["stop"]
       modelDisplayLabel: "Assistant IA"
-      iconURL: "https://privia-dev-demo.aiyuuh.com/custom/logo.svg"
+      iconURL:
 # fileConfig:
 #   endpoints:
 #     assistants:
