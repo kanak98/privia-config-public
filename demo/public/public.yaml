@@ -12,29 +12,6 @@ cache: true
 
 # Custom interface configuration
 interface:
-modelSpecs: # ← ICI
-  enforce: false
-  prioritize: true
-  list:
-    - name: "assistant-general"
-      label: "Assistant Général"
-      description: "Pour les tâches courantes : résumé, rédaction, etc."
-      iconURL: "🧠"
-      preset:
-        endpoint: "OpenRouter"
-        model: "mistralai/mistral-small-3.1-24b-instruct"
-        greeting: "Bonjour, comment puis-je vous aider aujourd'hui ?"
-        temperature: 0.7
-
-    - name: "assistant-logique"
-      label: "Assistant Logique"
-      description: "Expert en raisonnement, démonstration, logique"
-      iconURL: "🔍"
-      preset:
-        endpoint: "OpenRouter"
-        model: "deepseek/deepseek-prover-v2"
-        greeting: "Posez-moi une question complexe, je vais raisonner avec vous."
-        temperature: 0.3
   customWelcome: "Privia, l’IA privée et sécurisée. Bienvenue, {{user.name}} !"
   # Privacy policy settings
   # privacyPolicy:
@@ -103,6 +80,36 @@ modelSpecs: # ← ICI
 #    size: "normal"      # Options: "normal", "compact", "flexible", or "invisible"
 
 # Example Registration Object Structure (optional)
+modelSpecs:
+  enforce: false
+  prioritize: true
+  list:
+    - name: "assistant-general"
+      label: "Assistant Général"
+      description: "Pour les emails, résumés, idées"
+      iconURL: "🧠"
+      preset:
+        endpoint: "Assistant IA"
+        model: "mistralai/mistral-small-3.1-24b-instruct"
+        greeting: "Bonjour, je suis votre assistant IA général."
+
+    - name: "assistant-analytique"
+      label: "Assistant Analytique"
+      description: "Spécialisé en analyse de documents et de chiffres"
+      iconURL: "📊"
+      preset:
+        endpoint: "Assistant IA"
+        model: "deepseek/deepseek-chat"
+        greeting: "Je suis prêt à analyser vos données."
+
+    - name: "assistant-instantane"
+      label: "Assistant Instantané"
+      description: "Réponses courtes, rapides et utiles"
+      iconURL: "⚡"
+      preset:
+        endpoint: "Assistant IA"
+        model: "google/gemini-2.0-flash-exp"
+        greeting: "Posez-moi une question, j'y réponds vite !"
 registration:
   socialLogins:
     ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
@@ -205,7 +212,7 @@ endpoints:
   #   # (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
   #   capabilities: ["execute_code", "file_search", "actions", "tools"]
   custom:
-    - name: "OpenRouter"
+    - name: "Assistant IA"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
