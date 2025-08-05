@@ -201,6 +201,14 @@ endpoints:
     #   # (optional) Agent Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
     capabilities: ["execute_code", "file_search", "actions", "tools"]
   custom:
+    - name: "agent-n8n"
+      label: "Agent Automatisable (n8n)"
+      description: "Connexion directe à ton workflow n8n via MCP"
+      iconURL: "🧠"
+      preset:
+        endpoint: "n8n-agent" # ← identique au mcpServers.n8n-agent
+        model: "default"
+        greeting: "Bonjour, je suis connecté à ton système d'automatisation n8n."
     - name: "Assistant IA"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
