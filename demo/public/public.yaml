@@ -72,6 +72,18 @@ interface:
   agents: true
   runCode: true
 
+modelSpecs:
+  enforce: false
+  prioritize: true
+  list:
+    - name: "agent-n8n"
+      label: "Agent Automatisable (n8n)"
+      description: "Connexion directe à ton workflow n8n via MCP"
+      iconURL: "🧠"
+      preset:
+        endpoint: "n8n-agent" # ← identique au mcpServers.n8n-agent
+        model: "default"
+        greeting: "Bonjour, je suis connecté à ton système d'automatisation n8n."
 # Example Cloudflare turnstile (optional)
 #turnstile:
 #  siteKey: "your-site-key-here"
