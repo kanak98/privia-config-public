@@ -62,15 +62,15 @@ interface:
   #     By using the Website, you acknowledge that you have read these Terms of Service and agree to be bound by them.
 
   endpointsMenu: true
-  modelSelect: false
-  parameters: false
+  modelSelect: true
+  parameters: true
   sidePanel: true
   presets: true
   prompts: true
   bookmarks: true
   multiConvo: true
   agents: true
-  runCode: false
+  runCode: true
 
 # Example Cloudflare turnstile (optional)
 #turnstile:
@@ -110,15 +110,6 @@ modelSpecs:
         endpoint: "Assistant IA"
         model: "google/gemini-2.0-flash-exp"
         greeting: "Posez-moi une question, j'y réponds vite !"
-    - name: "n8n-agent"
-      label: "Assistant Automatisable (n8n)"
-      description: "Agent connecté à ton serveur n8n via MCP"
-      iconURL: "🧠"
-      preset:
-        endpoint: "n8n-agent"
-        model: "default"
-        greeting: "Bonjour, je suis l’IA connectée à ton système d’automatisation."
-
 registration:
   socialLogins:
     ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
