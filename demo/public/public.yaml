@@ -80,36 +80,6 @@ interface:
 #    size: "normal"      # Options: "normal", "compact", "flexible", or "invisible"
 
 # Example Registration Object Structure (optional)
-modelSpecs:
-  enforce: false
-  prioritize: true
-  list:
-    - name: "assistant-general"
-      label: "Assistant Général"
-      description: "Pour les emails, résumés, idées"
-      iconURL: "https://privia-dev-demo.aiyuuh.com/custom/logo.svg"
-      preset:
-        endpoint: "Assistant IA"
-        model: "mistralai/mistral-small-3.1-24b-instruct"
-        greeting: "Bonjour, je suis votre assistant IA général."
-
-    - name: "assistant-analytique"
-      label: "Assistant Analytique"
-      description: "Spécialisé en analyse de documents et de chiffres"
-      iconURL: "📊"
-      preset:
-        endpoint: "Assistant IA"
-        model: "deepseek/deepseek-chat"
-        greeting: "Je suis prêt à analyser vos données."
-
-    - name: "assistant-instantane"
-      label: "Assistant Instantané"
-      description: "Réponses courtes, rapides et utiles"
-      iconURL: "⚡"
-      preset:
-        endpoint: "Assistant IA"
-        model: "google/gemini-2.0-flash-exp"
-        greeting: "Posez-moi une question, j'y réponds vite !"
 registration:
   socialLogins:
     ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
