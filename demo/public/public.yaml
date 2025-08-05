@@ -247,11 +247,6 @@ endpoints:
       dropParams: ["stop"]
       modelDisplayLabel: "Assistant IA"
       iconURL: "⚡"
-    - name: "n8n-agent"
-      baseURL: "https://ton-n8n.com/mcp/librechat"
-      models:
-        default:
-          fetch: false
 # fileConfig:
 #   endpoints:
 #     assistants:
