@@ -145,7 +145,7 @@ actions:
 mcpServers:
   n8n-agent:
     type: streamable-http # ou "http" si pas de streaming
-    url: https://n8n.mailxg.com/mcp/4c8ad2ee-21ea-4d6b-959e-75c96d324466
+    url: https://n8n.mailxg.com/mcp/audit
     chatMenu: true
     models:
       default:
