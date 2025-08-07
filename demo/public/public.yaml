@@ -76,6 +76,14 @@ modelSpecs:
   enforce: false
   prioritize: true
   list:
+    - name: "assistant-general"
+      label: "Assistant Général"
+      description: "Pour les emails, résumés, idées"
+      iconURL: "https://privia-dev-demo.aiyuuh.com/custom/logo.svg"
+      preset:
+        endpoint: "Assistant IA"
+        model: "mistralai/mistral-small-3.1-24b-instruct"
+        greeting: "Bonjour, je suis votre assistant IA général."
     - name: "agent-n8n"
       label: "Agent Automatisable (n8n)"
       description: "Connexion directe à ton workflow n8n via MCP"
