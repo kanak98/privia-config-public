@@ -90,7 +90,7 @@ modelSpecs:
       description: "Connexion directe à ton workflow n8n via MCP"
       iconURL: "🧠"
       preset:
-        endpoint: "n8n-agent" # ← identique au mcpServers.n8n-agent
+        endpoint: "AI_Agent_Tool" # ← identique au mcpServers.n8n-agent
         model: "default"
         greeting: "Bonjour, je suis connecté à ton système d'automatisation n8n."
 # Example Cloudflare turnstile (optional)
@@ -155,7 +155,7 @@ mcpServers:
   AI_Agent_Tool:
     type: streamable-http # ou "http" si pas de streaming
     url: https://n8n.mailxg.com/mcp/audit
-    chatMenu: true
+    chatMenu: false
     models:
       default:
         fetch: false
