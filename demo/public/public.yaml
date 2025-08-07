@@ -159,6 +159,15 @@ mcpServers:
     models:
       default:
         fetch: false
+presetAgents:
+  - name: "AI_Agent_Tool"
+    label: "Agent Automatisable (n8n)"
+    description: "Connecté à ton workflow audit dans n8n"
+    iconURL: "🧠"
+    preset:
+      endpoint: "AI_Agent_Tool" # correspond à la clé de mcpServers
+      model: "default"
+      greeting: "Bonjour, je suis l’agent IA connecté à n8n."
 # mcpServers:
 #   everything:
 #     # type: sse # type can optionally be omitted
