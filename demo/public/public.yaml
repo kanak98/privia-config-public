@@ -151,7 +151,7 @@ actions:
 
 # Example MCP Servers Object Structure
 mcpServers:
-  AI_Agent_Tool:
+  AutoDiagnostic:
     type: streamable-http # ou "http" si pas de streaming
     url: https://n8n.mailxg.com/mcp/audit
     chatMenu: true
