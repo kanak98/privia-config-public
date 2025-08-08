@@ -60,8 +60,6 @@ interface:
   #     If you have any questions about these Terms, please contact us at contact@librechat.ai.
 
   #     By using the Website, you acknowledge that you have read these Terms of Service and agree to be bound by them.
-  mcpServers:
-    placeholder: "AI_Agent_Tool"
   endpointsMenu: true
   modelSelect: true
   parameters: true
