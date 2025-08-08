@@ -83,6 +83,14 @@ modelSpecs:
         endpoint: "Assistant IA"
         model: "mistralai/mistral-small-3.1-24b-instruct"
         greeting: "Bonjour, je suis votre assistant IA général."
+    - name: "Automatisation RH"
+      label: "Agent RH n8n"
+      description: "Audit et automatisation via workflow n8n"
+      iconURL: "🧠"
+      preset:
+        endpoint: "agents"
+        agent_id: "agent_23ka76Xkrd3Cl1C1u86_Y"
+        greeting: "Bonjour, je suis l’agent RH connecté à ton système d’automatisation."
 
 # Example Cloudflare turnstile (optional)
 #turnstile:
