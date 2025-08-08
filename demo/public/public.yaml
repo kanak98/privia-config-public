@@ -86,7 +86,7 @@ modelSpecs:
     - name: "Automatisation RH"
       label: "Agent RH n8n"
       description: "Audit et automatisation via workflow n8n"
-      iconURL: "🧠"
+      iconURL: "https://privia-dev-demo.aiyuuh.com/custom/logo.svg"
       preset:
         endpoint: "agents"
         agent_id: "agent_23ka76Xkrd3Cl1C1u86_Y"
