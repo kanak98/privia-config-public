@@ -85,14 +85,7 @@ modelSpecs:
         endpoint: "Assistant IA"
         model: "mistralai/mistral-small-3.1-24b-instruct"
         greeting: "Bonjour, je suis votre assistant IA général."
-    - name: "agent-n8n"
-      label: "Agent Automatisable (n8n)"
-      description: "Connexion directe à ton workflow n8n via MCP"
-      iconURL: "🧠"
-      preset:
-        endpoint: "AI_Agent_Tool" # ← identique au mcpServers.n8n-agent
-        model: "default"
-        greeting: "Bonjour, je suis connecté à ton système d'automatisation n8n."
+
 # Example Cloudflare turnstile (optional)
 #turnstile:
 #  siteKey: "your-site-key-here"
@@ -160,7 +153,7 @@ mcpServers:
       default:
         fetch: false
 presetAgents:
-  - name: "AI_Agent_Tool"
+  - name: "audit"
     label: "Agent Automatisable (n8n)"
     description: "Connecté à ton workflow audit dans n8n"
     iconURL: "🧠"
