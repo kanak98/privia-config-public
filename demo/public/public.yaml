@@ -78,7 +78,7 @@ modelSpecs:
     - name: "Chat IA"
       label: "Chat IA"
       description: "Pour écrire, résumer, poser des questions"
-      iconURL: "https://nodels65-eu.n0c.com:4443/fb/hostudew/api/preview/n0c-storage/big/public/privia/chat_icon.svg?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJmciIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOlsiLisiXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZSwiZGF0ZUZvcm1hdCI6ZmFsc2UsImRvbWFpbiI6Imhvc3Rlci1raXhvdC5jb20ifSwiaXNzIjoiRmlsZSBCcm93c2VyIiwiZXhwIjoxNzU0NjQxMTM5LCJpYXQiOjE3NTQ2MzM5Mzl9.Wjbe_jgFkO98gCtTWyY5pBuRVi3ylaMJW-tPzPYHUIw&inline=true&key=1754633780000"
+      iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/chat.svg"
       preset:
         endpoint: "Assistant IA"
         model: "mistralai/mistral-small-3.1-24b-instruct"
