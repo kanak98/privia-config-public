@@ -86,7 +86,7 @@ modelSpecs:
     - name: "AutoDiagnostic"
       label: "AutoDiagnostic"
       description: "Identifie ce que vous pouvez automatiser, simplement."
-      iconURL: "https://nodels65-eu.n0c.com:4443/fb/hostudew/api/preview/n0c-storage/big/public/privia/agent_icon.svg?auth=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJsb2NhbGUiOiJmciIsInZpZXdNb2RlIjoibW9zYWljIiwic2luZ2xlQ2xpY2siOmZhbHNlLCJwZXJtIjp7ImV4ZWN1dGUiOnRydWUsImNyZWF0ZSI6dHJ1ZSwicmVuYW1lIjp0cnVlLCJtb2RpZnkiOnRydWUsImRlbGV0ZSI6dHJ1ZSwic2hhcmUiOnRydWUsImRvd25sb2FkIjp0cnVlfSwiY29tbWFuZHMiOlsiLisiXSwibG9ja1Bhc3N3b3JkIjpmYWxzZSwiaGlkZURvdGZpbGVzIjpmYWxzZSwiZGF0ZUZvcm1hdCI6ZmFsc2UsImRvbWFpbiI6Imhvc3Rlci1raXhvdC5jb20ifSwiaXNzIjoiRmlsZSBCcm93c2VyIiwiZXhwIjoxNzU0NjQxMTM5LCJpYXQiOjE3NTQ2MzM5Mzl9.Wjbe_jgFkO98gCtTWyY5pBuRVi3ylaMJW-tPzPYHUIw&inline=true&key=1754636282000"
+      iconURL: "https://privia-dev-demo.aiyuuh.com/custom/logo.svg"
       preset:
         endpoint: "agents"
         agent_id: "agent_23ka76Xkrd3Cl1C1u86_Y"
