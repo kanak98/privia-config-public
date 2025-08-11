@@ -78,7 +78,7 @@ modelSpecs:
     - name: "Chat IA"
       label: "Chat IA"
       description: "Pour écrire, résumer, poser des questions"
-      iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/cadena-1.svg"
+      iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/cadena-2.svg"
       preset:
         endpoint: "Assistant IA"
         model: "mistralai/mistral-small-3.1-24b-instruct"
