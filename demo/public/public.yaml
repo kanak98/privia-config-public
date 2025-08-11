@@ -215,17 +215,7 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
-          - "---FREE---"
           - mistralai/mistral-small-3.1-24b-instruct
-          - deepseek/deepseek-chat:free
-          - google/gemini-2.0-flash-exp:free
-        allowed:
-          - id: "mistralai/mistral-small-3.1-24b-instruct"
-            displayName: "Assistant Général"
-          - id: "deepseek/deepseek-chat"
-            displayName: "Assistant Analytique"
-          - id: "google/gemini-2.0-flash-exp"
-            displayName: "Assistant Instantané"
         fetch: false
       titleConvo: true
       titleModel: "mistralai/mistral-small-3.1-24b-instruct"
