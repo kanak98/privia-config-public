@@ -86,7 +86,7 @@ modelSpecs:
     - name: "AutoDiagnostic"
       label: "AutoDiagnostic"
       description: "Identifie ce que vous pouvez automatiser, simplement."
-      iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/Assistant_ai.svg"
+      iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/agent_etoile.svg"
       preset:
         endpoint: "agents"
         agent_id: "agent_23ka76Xkrd3Cl1C1u86_Y"
