@@ -165,6 +165,69 @@ mcpServers:
     models:
       default:
         fetch: false
+  NetSuite:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/netsuite
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  Workday:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/workday
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  SageX3:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/sagex3
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  Dolibarr:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/dolibarr
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  WordPress:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/wordpress
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  Shopify:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/shopify
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  SolidWorks:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/solidworks
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  AdobePremierePro:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/adobepremierepro
+    chatMenu: true
+    models:
+      default:
+        fetch: false
+  DaVinciResolve:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/davinciresolve
+    chatMenu: true
+    models:
+      default:
+        fetch: false
 # mcpServers:
 #   everything:
 #     # type: sse # type can optionally be omitted
