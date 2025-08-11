@@ -69,7 +69,7 @@ interface:
   bookmarks: true
   multiConvo: true
   agents: true
-  runCode: true
+  runCode: false
 
 modelSpecs:
   enforce: false
