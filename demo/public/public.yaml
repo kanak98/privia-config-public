@@ -12,7 +12,7 @@ cache: true
 
 # Custom interface configuration
 interface:
-  customWelcome: "Privia, l’IA privée et sécurisée. Bienvenue, {{user.name}} !"
+  customWelcome: "Bienvenue {{user.name}} L’IA privée qui travaille pour vous."
   # Privacy policy settings
   # privacyPolicy:
   #   externalUrl: 'https://librechat.ai/privacy-policy'
@@ -69,7 +69,7 @@ interface:
   bookmarks: true
   multiConvo: true
   agents: true
-  runCode: false
+  runCode: true
 
 modelSpecs:
   enforce: false
@@ -82,7 +82,7 @@ modelSpecs:
       preset:
         endpoint: "Assistant IA"
         model: "mistralai/mistral-small-3.1-24b-instruct"
-        greeting: "Posez votre question, j’écoute."
+        greeting: "Je suis prêt à vous répondre : quelle est votre question ?"
     - name: "AutoDiagnostic"
       label: "AutoDiagnostic"
       description: "Identifie ce que vous pouvez automatiser, simplement."
