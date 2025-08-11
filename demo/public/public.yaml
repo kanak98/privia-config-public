@@ -68,8 +68,8 @@ interface:
   prompts: true
   bookmarks: true
   multiConvo: true
-  agents: true
-  runCode: true
+  agents: false
+  runCode: false
 
 modelSpecs:
   enforce: false
