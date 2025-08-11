@@ -221,7 +221,7 @@ endpoints:
       titleModel: "mistralai/mistral-small-3.1-24b-instruct"
       dropParams: ["stop"]
       modelDisplayLabel: "Assistant IA"
-      iconURL: "⚡"
+      iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/mist.svg"
 # fileConfig:
 #   endpoints:
 #     assistants:
