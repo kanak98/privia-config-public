@@ -158,6 +158,13 @@ mcpServers:
     models:
       default:
         fetch: false
+  Odoo:
+    type: streamable-http # ou "http" si pas de streaming
+    url: https://n8n.mailxg.com/mcp/odoo
+    chatMenu: true
+    models:
+      default:
+        fetch: false
 # mcpServers:
 #   everything:
 #     # type: sse # type can optionally be omitted
