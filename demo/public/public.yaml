@@ -216,6 +216,10 @@ endpoints:
       models:
         default:
           - mistralai/mistral-small-3.1-24b-instruct
+          - mistralai/devstral-small:free
+          - mistralai/mistral-7b-instruct:free
+          - mistralai/mistral-nemo:free
+          - mistralai/mistral-small-24b-instruct-2501:free
         fetch: false
       titleConvo: true
       titleModel: "mistralai/mistral-small-3.1-24b-instruct"
