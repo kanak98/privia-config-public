@@ -154,7 +154,7 @@ mcpServers:
   AutoDiagnostic:
     type: streamable-http # ou "http" si pas de streaming
     url: https://n8n.mailxg.com/mcp/audit
-    chatMenu: true
+    chatMenu: false
     models:
       default:
         fetch: false
@@ -216,7 +216,6 @@ endpoints:
       models:
         default:
           - mistralai/mistral-small-3.1-24b-instruct
-          - mistralai/devstral-small:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-nemo:free
           - mistralai/mistral-small-24b-instruct-2501:free
