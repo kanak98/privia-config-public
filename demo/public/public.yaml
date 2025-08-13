@@ -47,7 +47,11 @@ interface:
 
   #     You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the Website. Prohibited behavior includes harassing or causing distress or inconvenience to any person, transmitting obscene or offensive content, or disrupting the normal flow of dialogue within the Website.
 
-  ## 5. Governing Law
+  ## 5. Governing actions:
+  allowedDomains:
+    - "swapi.dev"
+    - "librechat.ai"
+    - "google.com"Law
 
   #     These Terms shall be governed by and construed in accordance with the laws of the United States, without giving effect to any principles of conflicts of law.
 
@@ -103,8 +107,8 @@ modelSpecs:
 registration:
   socialLogins:
     ["github", "google", "discord", "openid", "facebook", "apple", "saml"]
-  allowedDomains:
-    - "gmail.com"
+  # allowedDomains:
+  # - "gmail.com"
 
 # Example Balance settings
 # balance:
