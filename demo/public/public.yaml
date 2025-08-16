@@ -93,7 +93,7 @@ modelSpecs:
       iconURL: "https://iseoshop.com/ephyla/wp-content/uploads/2025/08/AutoDiagnostic.svg"
       preset:
         endpoint: "agents"
-        agent_id: "agent_23ka76Xkrd3Cl1C1u86_Y"
+        agent_id: "agent_qXwYSV509KVF3MvOS_EOd"
         greeting: "Décrivez une tâche ou un processus. AutoDiagnostic vous dira s’il est automatisable, avec quels outils, et combien cela peut vous faire gagner (temps, argent, fiabilité)."
 
 # Example Cloudflare turnstile (optional)
